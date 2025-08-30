@@ -426,6 +426,10 @@
 }
 
 @media (max-width: 768px) {
+  .coinflip-container {
+    padding: 24px;
+    gap: 24px;
+  }
   .coinflip-button-row {
     flex-direction: column;
     align-items: start;
@@ -445,6 +449,9 @@
 }
 
 @media (max-width: 480px) {
+  .coinflip-container {
+    padding: 16px;
+  }
   .choice-buttons {
     flex-direction: column;
   }

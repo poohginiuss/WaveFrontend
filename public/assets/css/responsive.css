@@ -808,6 +808,13 @@
     margin-left: 0px;
     padding: 30px;
   }
+  .prize-pools.coinflip .mega-prize-pool .right .r-row {
+    align-items: center;
+  }
+  .prize-pools.coinflip .mega-prize-pool .right .r-row .d-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .timer-box .content {
     flex-direction: column;
     justify-content: center;
@@ -1030,6 +1037,13 @@
 
 
 @media (max-width: 575px) {
+  .prize-pools .mega-prize-pool .right {
+    padding: 20px;
+    border-radius: 32px;
+  }
+  .prize-pools .mega-prize-pool .right .r-row {
+    align-items: center;
+  }
   .hero-area {
     padding: 232px 0px 265px;
   }
