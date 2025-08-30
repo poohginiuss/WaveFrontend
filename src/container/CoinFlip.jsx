@@ -445,8 +445,8 @@ function CoinFlip() {
                       <p>50/50 chance to win big – pick a side and flip the coin!</p>
                     </div>
                   </div>
-                  <div className='r-row mt-3'>
-                    <div className='d-flex'>
+                    <div className='r-row mt-3'>
+                      <div className='d-flex flex-wrap justify-content-center'>
                       <div className='item'>
                         <div className={isHead ? "count active" : "count"} onClick={() => setIsHead(true)}>
                           <img src="/assets/images/game/head.png" alt="" width={40} />
@@ -461,10 +461,10 @@ function CoinFlip() {
                       </div>
                     </div>
                   </div>
-                  <div className='r-row mt-3'>
-                    <div className='d-flex' style={{flexDirection: 'column'}}>
-                        <span>WAGER:</span>
-                      <div className='d-flex'>
+                    <div className='r-row mt-3'>
+                      <div className='d-flex flex-column align-items-center'>
+                          <span>WAGER:</span>
+                        <div className='d-flex flex-wrap justify-content-center'>
                         {gameMinTokenAmount.map((value, idx) => (
                           <div className={idx === 0 ? 'item ml-0' : 'item ml-2'} key={value}>
                             <div
