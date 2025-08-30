@@ -18,7 +18,7 @@ export default function useSocketLeaderboard(
   body = { gameType: '', page: 1, limit: 10 }
 ) {
   // console.log("useSocketLeaderboard", path, body);
-  const [leaderboard, setLeaderboard] = useState(null);
+  const [leaderboard, setLeaderboard] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
@@ -51,6 +51,7 @@ export default function useSocketLeaderboard(
       } catch (e) {
         if (e.name !== "AbortError") {
           setError(e.message || "Failed to load leaderboard");
+          setLeaderboard([]);
         }
       } finally {
         setLoading(false);
