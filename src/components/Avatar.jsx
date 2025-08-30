@@ -194,7 +194,7 @@ export default function Avatar() {
 
   return (
     <>
-      <div style={{ display: 'flex', alignItems: 'center', position: 'relative', marginLeft: 10 }}>
+      <div className="avatar-wrapper" style={{ display: 'flex', alignItems: 'center', position: 'relative' }}>
         <div className="avatar-column">
           <button
             type="button"

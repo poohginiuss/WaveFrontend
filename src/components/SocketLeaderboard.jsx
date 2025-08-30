@@ -7,6 +7,7 @@ function SocketLeaderboard({apiUrl, body}) {
   useSocketLeaderboard(apiUrl, body/*{ gameType: true, page: 1, limit: 10 }*/);
 
   if (loading) return <p>Loading leaderboard...</p>;
+  if (error) return <p>{error}</p>;
   
   return (
     

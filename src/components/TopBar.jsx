@@ -22,8 +22,12 @@ const TopBar = () => {
                       aria-label="Toggle navigation">
                       <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse justify-content-end fixed-height" id="main_menu" style={{marginRight: "24px"}}>
-                      <ul className="navbar-nav ml-auto">
+                    <div
+                      className="collapse navbar-collapse flex-column flex-lg-row align-items-start align-items-lg-center"
+                      id="main_menu"
+                      style={{ marginRight: "24px" }}
+                    >
+                      <ul className="navbar-nav mb-3 mb-lg-0 me-lg-auto">
                         {
                           menuConfig.map((item, index) => {
                             return (
@@ -36,8 +40,10 @@ const TopBar = () => {
                         }
 
                       </ul>
-                      <w3m-button />
-                      <Avatar />
+                      <div className="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-2 w-100 w-lg-auto">
+                        <w3m-button />
+                        <Avatar />
+                      </div>
                     </div>
                   </div>
                 </nav>
